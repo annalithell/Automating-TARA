@@ -3,7 +3,7 @@
   "summary": {
     "title": "Threat Models LLMs",
     "owner": "Anna Lithell",
-    "description": "",
+    "description": "This repository contains system models described by test prompts used to evaluate different LLM tools. ",
     "id": 0
   },
   "detail": {
