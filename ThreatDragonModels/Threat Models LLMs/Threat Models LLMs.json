@@ -1274,7 +1274,8 @@
               "threats": []
             }
           }
-        ]
+        ],
+        "description": "SAE level 1"
       }
     ],
     "diagramTop": 1,
