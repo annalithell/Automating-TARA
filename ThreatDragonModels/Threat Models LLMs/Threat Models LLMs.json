@@ -35,14 +35,21 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "f1b291f3-b88b-4529-9146-f9b3d0c51405",
             "zIndex": -1,
+            "id": "f1b291f3-b88b-4529-9146-f9b3d0c51405",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
               "description": "",
               "isTrustBoundary": true,
-              "hasOpenThreats": false
+              "hasOpenThreats": false,
+              "containedElements": [
+                "a647e44d-2bf2-4e59-8929-2d0cd576f034",
+                "f43ce458-45e9-41c7-b69b-99135e27ced5"
+              ],
+              "crossingFlows": [
+                "fca7467e-feff-4682-8fa5-d7a113e9bd6a"
+              ]
             }
           },
           {
@@ -56,14 +63,20 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "5deccfad-2d14-45b7-8303-d531e955421b",
             "zIndex": -1,
+            "id": "5deccfad-2d14-45b7-8303-d531e955421b",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Trust Boundary",
               "description": "",
               "isTrustBoundary": true,
-              "hasOpenThreats": false
+              "hasOpenThreats": false,
+              "containedElements": [
+                "73452aee-273e-45da-90d1-0fdf95325881",
+                "edcecbc2-337f-445a-a948-90b35cf42363",
+                "66ea5107-0d9a-4eab-a515-69c2f17365c0"
+              ],
+              "crossingFlows": []
             }
           },
           {
@@ -96,7 +109,8 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               ""
@@ -141,7 +155,8 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               "CAN"
@@ -187,7 +202,8 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               "Data Flow"
@@ -233,7 +249,10 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": [
+                "f1b291f3-b88b-4529-9146-f9b3d0c51405"
+              ]
             },
             "labels": [
               "Data Flow"
@@ -278,7 +297,8 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               "Data Flow"
@@ -323,7 +343,8 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               "Data Flow"
@@ -374,7 +395,8 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               "Data Flow"
@@ -425,7 +447,8 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               "Data Flow"
@@ -470,7 +493,8 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               "Data Flow"
@@ -516,7 +540,8 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "trustBoundaryIds": []
             },
             "labels": [
               "Data Flow"
@@ -532,26 +557,37 @@
             },
             "vertices": [
               {
-                "x": 850,
-                "y": 530
+                "x": 820,
+                "y": 520
               },
               {
-                "x": 300,
-                "y": 610
+                "x": 310,
+                "y": 570
               },
               {
-                "x": 70,
-                "y": 550
-              },
-              {
-                "x": 30,
-                "y": 410
+                "x": 60,
+                "y": 520
               },
               {
                 "x": 50,
                 "y": 310
               }
-            ]
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
@@ -574,6 +610,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -657,7 +694,6 @@
               ]
             },
             "id": "a647e44d-2bf2-4e59-8929-2d0cd576f034",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "RF \ntransmitter / receiver",
@@ -694,6 +730,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -777,7 +814,6 @@
               ]
             },
             "id": "9926add6-575c-4514-b23a-89621d3b16d1",
-            "zIndex": 12,
             "data": {
               "type": "tm.Actor",
               "name": "Key",
@@ -814,6 +850,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -897,7 +934,6 @@
               ]
             },
             "id": "73452aee-273e-45da-90d1-0fdf95325881",
-            "zIndex": 13,
             "data": {
               "type": "tm.Store",
               "name": "Key storage \n(symmetric keys, \nrolling-code counter, etc.)",
@@ -935,6 +971,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1018,7 +1055,6 @@
               ]
             },
             "id": "f43ce458-45e9-41c7-b69b-99135e27ced5",
-            "zIndex": 14,
             "data": {
               "type": "tm.Process",
               "name": "Vehicle BCU",
@@ -1055,6 +1091,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 15,
             "ports": {
               "groups": {
                 "top": {
@@ -1138,7 +1175,6 @@
               ]
             },
             "id": "edcecbc2-337f-445a-a948-90b35cf42363",
-            "zIndex": 15,
             "data": {
               "type": "tm.Process",
               "name": "Vehicle BCU",
@@ -1175,6 +1211,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 16,
             "ports": {
               "groups": {
                 "top": {
@@ -1258,7 +1295,6 @@
               ]
             },
             "id": "66ea5107-0d9a-4eab-a515-69c2f17365c0",
-            "zIndex": 16,
             "data": {
               "type": "tm.Process",
               "name": "Immobilizer \nModule",
